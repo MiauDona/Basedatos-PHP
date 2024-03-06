@@ -1,0 +1,36 @@
+.social i {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+#mimenu ul li {
+  padding: 0 1rem;
+}
+
+.miheader {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.miheader video{
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -1;
+}
+
+.margen-b{
+  margin-bottom: 5rem;
+}
+.card{
+  transition:0.3s;
+
+}
+.card:hover{
+  transform: scale(1.08);
+}
