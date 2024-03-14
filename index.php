@@ -24,6 +24,9 @@
         src="./images/video.mp4"
         type="video/mp4"
       ></video>
+
+
+      
       <!-- Menú -->
       <nav
         class="navbar navbar-expand-md bg-dark fixed-top bg-opacity-50 border-bottom border-white border-1"

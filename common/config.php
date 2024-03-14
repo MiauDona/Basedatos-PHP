@@ -4,7 +4,7 @@
             'host' => 'localhost',
             'user' => 'hlc_user',
             'password' => 'usuario',
-            'database' => 'hlc',
+            'database' => 'galeria',
             'encoding' => 'utf8',
         ),
     );

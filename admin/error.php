@@ -16,7 +16,7 @@
 <body>
     <h1>Error</h1>
     <p>Usuario o contraseña incorrectos</p>
-    <a href="index.php?page=login.php">Volver a intentar</a>
+    <a href="index.php?page=login">Volver a intentar</a>
     <?php
         print_r($_SESSION['id']);
         print_r($_SESSION['email']);

@@ -3,7 +3,7 @@
     include "../../common/config.php";
     include "../../common/mysql.php";
 
-     debug($_POST);
+   debug($_POST);
    $nombre = $_POST['nombre'];
    $email = $_POST['email'];
    $password = md5($_POST['password']);
@@ -23,6 +23,6 @@
    Close ($connection);
 
    //Redirigimos hacia otra página
-   header("location: ../../index.php");
+   //header("location: ../../home.php");
 
 ?>

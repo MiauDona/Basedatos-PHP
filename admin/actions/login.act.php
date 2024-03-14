@@ -11,11 +11,13 @@
     // Conexión
      $connection = Connect($config['database']);
      $sql = "select * from usuarios where email='".$email."' and password='".$password."' ";
-//     $row = $mysql->find($sql);
+
+    // Ejecución de la consulta
     $rows = ExecuteQuery($sql, $connection);
+    Close($connection);
 
-
-    if(empty($row)){
+    // Fin de la conexion //////////////////////////////////////////
+    if(empty($rows)){
         header("Location: ../error.php");
         
     } else{
@@ -24,10 +26,12 @@
         $_SESSION['email'] = $rows['email'];
         $_SESSION['sesion_id'] = session_id();
 
-        header("Location: ../home.php");
+        header("Location: ../home.php?page=listado");
     }
 
 
 
-    Close($connection);
+    
+    debug($rows);
+
 ?>

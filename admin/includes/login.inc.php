@@ -62,7 +62,7 @@
 
     
 <main class="form-signin w-100 m-auto bg-secondary bg-opacity-25 border border-dark border-2 rounded-3">
-  <form action="./actions/login.act.php" method="post">
+  <form role="form" action="./actions/login.act.php" method="post">
     <img class="mb-4" src="../images/bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Inicia sesión</h1>
 
@@ -76,7 +76,7 @@
     </div>
 
     <div class="form-check text-start my-3">
-      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault" name="enable">
+      <input class="form-check-input" type="checkbox" value="on" id="flexCheckDefault" name="enable">
       <label class="form-check-label" for="flexCheckDefault">
         Recuérdeme
       </label>
