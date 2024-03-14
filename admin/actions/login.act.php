@@ -17,13 +17,14 @@
 
     if(empty($row)){
         header("Location: ../error.php");
+        
     } else{
         session_start();
-        $_SESSION['id'] = $rows[0]['id'];
-        $_SESSION['email'] = $rows[0]['email'];
+        $_SESSION['id'] = $rows['id'];
+        $_SESSION['email'] = $rows['email'];
         $_SESSION['sesion_id'] = session_id();
 
-        header("Location: ../index.php");
+        header("Location: ../home.php");
     }
 
 
